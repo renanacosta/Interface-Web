@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+			<script>
+				function TestaVal()	{
+					if(document.TesteSub.Teste.value =="") {
+					alert("Campo não preenchido... Form não submetido");
+					return false;	}
+					else {
+						alert("Tudo OK...Form Submetido");
+						return true;
+						}
+					}
+			</script>
+
+		<form method="POST" name="TesteSub" onsubmit="return TestaVal()" action="localhost/local.php">
+			Digite um texto 
+			<input type="text" size="10" maxlength="10" name="Teste" value="">
+			Botao Submit
+			<input type="Submit" name="Bsub" value="Manda p/ Server">
+		</form>
+	</body>
+</html>

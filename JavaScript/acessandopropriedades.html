@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+			<p id = "intro"> Alo Mundo!</p>
+			<hr><hr><hr><br>
+			<script type="text/javascript">
+				
+			x = document.getElementById("intro");
+			// propriedade do elemento body
+			document.write(x.parentNode.nodeName+"<br>");
+			document.write(x.parentNode.nodeValue+"<br>");
+			document.write(x.parentNode.nodeType+"<br>");
+			document.write("<HR>");
+			//propriedes do elemento p
+			document.write(x.nodeName+"<br>");
+			document.write(x.nodeValue+"<br>");
+			document.write(x.nodeType+"<br>");
+			document.write("<HR>");
+			//propriedades do elemento Alo mundo
+			document.write(x.firstChild.nodeName+"<br>");
+			document.write(x.firstChild.nodeValue+"<br>");
+			document.write(x.firstChild.nodeType+"<br>");
+			
+			</script>
+		</body>
+</html>

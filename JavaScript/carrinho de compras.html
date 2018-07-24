@@ -1,0 +1,165 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="site.css">
+	<title> Carrinho de compras </title>
+<script language="JavaScript">
+
+carrinho = {
+
+	nome: "Renan Gomes Acosta",
+	data: "07/02/1984",
+	endereço: "Rua das Fragatas, 19",
+	cpf: "00071857079",
+	produtos: [
+	{nome_produto: "banana", preço: 2.00, quantidade: 5},
+	{nome_produto: "maça", preço: 2.50, quantidade: 10},
+	{nome_produto: "laranja", preço: 3.00, quantidade: 15}]
+	
+};
+
+frete = 
+{
+
+	Valor_frete: 15.00
+};
+
+desconto = 
+{
+
+	valor_desconto: 0.05
+}
+
+imposto = 
+{
+
+valor_imposto: 1.30
+
+}
+
+function mostra() {
+	valor = "";
+	valor += frete.Valor_frete;
+	valor = "";
+	valor += desconto.valor_desconto;
+	valor = "";
+	valor += imposto.valor_imposto;
+	valor = "";
+	valor += "Nome: " + carrinho.nome
+	+"<br><br>"
+	+"Data: " + carrinho.data
+	+"<br><br>"
+	+"Endereço: " + carrinho.endereço
+	+"<br><br>"
+	+"CPF: " + carrinho.cpf
+	+"<br><br>";
+	total = 0;
+	total1 = 0;
+	total2 = 0;
+	total3 = 0;
+
+	for (var i = 0; i < carrinho.produtos.length; i++) 
+	{
+valor += "Produto: " + carrinho.produtos[i].nome_produto;
+valor += " ---------- ";
+valor += " Preço R$: " + carrinho.produtos[i].preço;
+valor += " ---------- ";
+valor += " Quantidade: " + carrinho.produtos[i].quantidade;
+valor += " ---------- ";
+
+valor += " SubTotal: " + carrinho.produtos[i].preço*carrinho.produtos[i].quantidade;
+valor += "  <input type='button' value='Excluir' onclick = 'excluir("+i+")'>";
+valor += "<br><br>";
+
+total+= carrinho.produtos[i].preço*carrinho.produtos[i].quantidade;
+	}
+
+total1 += total + frete.Valor_frete;
+
+valor += "Total: " +total;
+document.getElementById("lista").innerHTML = valor;
+valor += "<br><br>"
+
+valor += "Valor com frete: " + total1;
+document.getElementById("lista").innerHTML = valor;
+valor += "<br><br>";
+
+total2 +=(total1 - (total1*desconto.valor_desconto));
+
+valor += "Valor com desconto:" + total2;
+document.getElementById("lista").innerHTML = valor;
+valor += "<br><br>";
+
+total3 += ((total2) + (total2*imposto.valor_imposto));
+
+valor += "Valor com imposto:" + total3;
+document.getElementById("lista").innerHTML = valor;
+}
+
+
+function altera(){
+
+	carrinho.nome=document.getElementById("nome").value;
+	carrinho.data=document.getElementById("data").value;
+	carrinho.endereço=document.getElementById("endereço").value;
+	carrinho.cpf=document.getElementById("cpf").value;
+	mostra();
+}
+
+
+
+function insere(){
+
+
+carrinho.produtos.push({nome_produto: document.getElementById("nome_produto").value, 
+preço: document.getElementById("preço").value, 
+quantidade:document.getElementById("quantidade").value});
+
+
+mostra();
+}
+
+function excluir(num){
+	carrinho.produtos.splice(num,1);
+	mostra();
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<form>
+
+# DADOS DO CLIENTE <BR><BR>
+
+Nome: <input type="text" name="nome" id="nome"><br><br>
+Data: <input type="text" name="data" id="data"><br><br>
+Endereço: <input type="text" name="endereço" id="endereço"><br><br>
+CPF: <input type="text" name="cpf" id="cpf"><br><br>
+		<input type="button" value="Alterar" onclick="altera()"><br><br>
+
+# DIGITE O NOME, A QUANTIDADE E O VALOR DO PRODUTO PARA ADICIONAR AO CARRINHO <BR><BR>
+
+Produto: <input type="text" name="nome" id="nome_produto"><br><br>
+Quantidade: <input type="text" name="nome" id= "quantidade"><br><br>
+Preço: <input type="text" name="nome" id= "preço"><br><br>
+Frete: <input type="text" name="Frete" id= "Frete"><br><br>
+Desconto: <input type="text" name="Desconto" id= "Desconto"><br><br>
+Imposto: <input type="text" name="Imposto" id= "Imposto"><br><br>
+		<input type="button" value="Adicionar" onclick="insere()"><br><br>
+
+		<div id="lista"> # LISTA DE COMPRAS </div><br>
+
+<input type="button" value="mostra" onClick="mostra()"/> <br><br>
+
+
+
+
+	</form>
+</body>
+</html>

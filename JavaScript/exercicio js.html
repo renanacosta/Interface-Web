@@ -1,0 +1,109 @@
+<html>
+<head>
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> FORMULÁRIO DE AULA </title>
+<script>
+function IsNum(v)
+
+{
+   var ValidChars = "0123456789";
+   var IsNumber=true;
+   var Char;
+
+ 
+   for (i = 0; i < v.length && IsNumber == true; i++) 
+      { 
+      Char = v.charAt(i); 
+      if (ValidChars.indexOf(Char) == -1) 
+         {
+         IsNumber = false;
+         }
+      }
+   return IsNumber;
+   
+}
+
+function valida(form) {
+if (form.nome.value=="") {
+alert("Preencha o nome corretamente.");
+//document.getElementById("mensagem").innerHTML="mensagem";
+form.nome.focus();
+form.nome.style.border="1px solid red";
+return false;
+}
+var filtro_mail = /^.+@.+\..{2,3}$/
+if (!filtro_mail.test(form.email.value) || form.email.value=="") {
+alert("Preencha o e-mail corretamente.");
+form.email.focus();
+return false;
+}
+
+if (form.data_nascimento.value=="" || form.data_nascimento.value.length != 10) {
+alert("Preencha a data de nascimento corretamente.");
+form.data_nascimento.focus();
+return false;
+}
+
+if (form.senha.value=="" || form.senha.value.length < 6) {
+alert("Preencha a senha corretamente.");
+form.senha.focus();
+return false;
+}
+
+if (form.conf_senha.value=="" || form.conf_senha.value.length < 6) {
+alert("Preencha a confirmação de senha corretamente.");
+form.conf_senha.focus();
+return false;
+}
+
+if (form.senha.value!=form.conf_senha.value) {
+alert("A senha e a confirmação tem de ser iguais.");
+form.conf_senha.focus();
+return false;
+}
+if (form.cpf.value=="") {
+alert("Preencha o CPF corretamente.");
+//document.getElementById("mensagem").innerHTML="mensagem";
+form.cpf.focus();
+form.cpf.style.border="1px solid red";
+return false;
+}
+
+if (form.preco.value=="" || form.preco.value.length < 6) {
+alert("Preencha o preço corretamente.");
+form.preco.focus();
+return false;
+}
+}
+
+
+</script>
+</head>
+<body>
+<form onsubmit="return valida(this);">
+
+Nome: <input type="text" name="nome"><br><br>
+
+E-mail: <input type="text" name="email"><br><br>
+
+Data de Nascimento: <input type="text" name="data_nascimento" value="dd/mm/aaaa" maxlength="10" onfocus="if (this.value=='dd/mm/aaaa'){this.value='';}" onblur="if (this.value==''){this.value='dd/mm/aaaa';}"><br><br>
+
+Senha: <input type="password" name="senha"> (Mínimo: 6 caracteres)<br><br>
+
+Confirmação de Senha: <input type="password" name="conf_senha"><br><br>
+
+CPF: <input type="text" name="CPF"><br><br>
+
+Preço: <input type="preco" name="preco"><br><br>
+
+Disciplina: <br><input type="checkbox" name="materia1" value="web"> Interface Web<br>
+  <input type="checkbox" name="materia2" value="poo"> POO <br>
+  <input type="checkbox" name="materia3" value="OC"> Organização de Computadores <br>
+  <input type="checkbox" name="materia4" value="Banco" > Banco de Dados <br><br>
+
+
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>

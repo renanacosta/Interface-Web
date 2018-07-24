@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<script>
+			var contador = 0;
+            var cont = 0;
+			function move(Direcao) {				
+				if (contador != 0) {
+					para();
+				}
+				
+				if (Direcao == "direita") {
+					timer = setInterval("direita()",50);
+					contador ++;
+				}
+				
+				if (Direcao == "esquerda") {					
+					timer = setInterval("esquerda()",50);
+					contador ++;
+				}
+
+				if (Direcao == "cima") {					
+					timer = setInterval("cima()",50);
+					contador ++;
+				}
+
+				if (Direcao == "baixo") {					
+					timer = setInterval("baixo()",50);
+					contador ++;
+				}
+			}
+			
+			function para() {
+				clearInterval(timer);
+			}
+			
+			function direita() {
+				div1.style.left = parseInt(div1.style.left)+5;
+				if ( parseInt(div1.style.left) >= 1000  - parseInt(div1.style.width))
+					{clearInterval(timer);
+					timer = setInterval ("esquerda()",50);
+				}
+			}
+			
+			function esquerda() {
+				div1.style.left = parseInt(div1.style.left)-5;
+				if ( parseInt(div1.style.left) <= 0)
+					{clearInterval(timer);
+					timer = setInterval ("direita()",50);
+				}
+			}
+			
+			function baixo() {
+				div1.style.top = parseInt(div1.style.top)+5;
+				if(parseInt(div1.style.top) >= 500 - parseInt(div1.style.height))
+				{clearInterval(timer);
+				timer = setInterval("cima()",50);
+			    }
+			}
+			function cima() {
+				div1.style.top = parseInt(div1.style.top)-5;
+				if(parseInt(div1.style.top) <= 0 ){
+				clearInterval(timer);
+				timer = setInterval("baixo()",50);	
+				}
+			}
+			
+			function altura(parametro) {
+				div1.style.height = parseInt(div1.style.height)+parametro;
+			}
+			
+			function largura(parametro) {
+				div1.style.width = parseInt(div1.style.width)+parametro;
+			}
+			function ChangeStyle()
+			{
+			if(cont == 0){
+				document.getElementById("div1").style.backgroundColor="blue";
+				cont++;
+			}else{
+				if(cont == 1){
+					document.getElementById("div1").style.backgroundColor="orange";
+					cont++;
+		   	    }else{
+		   	    if(cont == 2){
+				    document.getElementById("div1").style.backgroundColor="yellow";
+				    cont = 0;
+		        	}
+		        }
+		    }
+
+		    }
+		</script>
+	</head>
+	<body>
+		<div style="position: absolute; top: 0px; left:0px; width: 1000px; height: 500px; background-color: black; text-align: center;">
+			cursor2
+		</div>
+		<div id="div1" style="position: absolute; top: 10px; left: 15px; width: 50px; height: 50px; background-color: green; text-align: center;">
+			cursor1
+		</div>
+		<div style="position: absolute; top: 100px; left:1050px; text-align: center;">
+			<form name="forumlario">				
+				<hr>
+				<input type="button" value="Para" onclick="para();"><hr>
+				<input type="button" value="Cima," onclick="move('cima');"><br>
+				<input type="button" value="Esquerda" onclick="move('esquerda');">
+				<input type="button" value="Direita" onclick="move('direita');"><br>
+				<input type="button" value="Baixo" onclick="move('baixo');"><hr>
+				<input type="button" value="+ Altura" onclick="altura(5);">
+				<input type="button" value="- Altura" onclick="altura(-5);"><hr>
+				<input type="button" value="+ Largura" onclick="largura(5);">
+				<input type="button" value="- Largura" onclick="largura(-5);"><hr>
+				Mudar a cor do seu Quadrado:<br>
+				<input type="button" value="Cor" onclick= "ChangeStyle();"/>
+				<hr>
+			</form>
+		</div>
+	</body>
+</html>
