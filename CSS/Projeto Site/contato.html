@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+	<div class ="tudo">
+		<header>
+			<div class = "logo"></div>
+			<div class = "banner"></div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="./site.html">HOME</a></li>
+				<li><a href="./contato.html">CONTATO</a></li>
+				<li><a>PRODUTO</a>
+
+					<ul>
+						<li><a href="./masculino.html">Masculino</a></li>
+						<li><a href="./feminino.html">Feminino</a></li>
+						<li><a href="./infantil.html">Infantil</a></li>
+					</ul>
+					</li>
+
+
+				<li><a href="./sobre.html">SOBRE</a></li>
+				<li><a href="./localizacao.html">LOCALIZAÇÃO</a></li>
+			</ul>
+			
+			</nav>
+
+		<section><div class= "meioHome">
+			
+			<form action="recebe.php" method="post"> <br><br>
+
+				<div class = "formulario" >
+
+				NOME: <input type="text" name="NOME" autofocus placeholder="DIGITE SEU NOME AQUI"> <br><br>
+				
+				SENHA: <input type="password" name="SENHA" placeholder="DIGITE SUA SENHA" required> <br><br>
+				
+				ESCOLHA SEU UNIVERSO: <br>
+				<input type="radio" name="time" value="INT"> MARVEL <br>
+				<input type="radio" name="time" value="GRE"> DC COMICS <br><br>
+				
+				COMO NOS CONHECEU? <br> 
+				<input type="checkbox" name="COMO NOS CONHECEU?" value="INTERNET"> 
+
+				INTERNET <br>
+				<input type="checkbox" name="COMO NOS CONHECEU?" value="INDICAÇÃO DE AMIGOS"> 
+
+				INDICAÇÃO DE AMIGOS <br>
+				</div>
+				
+				COMENTÁRIO: <br>
+				<textarea cols="50" rows="5" name="COMENTÁRIO"> </textarea><br><br>
+				<select name="disc">
+					<option value="selecione"> GENERO </option>
+					<option value="w1"> M </option>
+					<option value="W2"> F </option>
+				</select><br><br>
+				
+				TELEFONE: <input type="tel" name="TELEFONE" placeholder="DIGITE SEU TELEFONE" required><br><br>
+				
+				SEARCH: <input type="search" name="PESQUISAR"><br><br>
+				
+				E-MAIL: <input type="mail" name="E-MAIL"placeholder="DIGITE SEU E-MAIL" required><br><br>
+				
+				URL: <input type="url" name="URL"><br><br>
+				
+				DATA: <input type="datetime" name="Dataehora"><br><br>
+				
+				NUMBER: <input type="number" name="valuex" min="0" max="20" /><br><br>
+				
+				RANGE: <input type="range" name="valuex" min="0" max="20" /><br><br>
+				
+				ESCOLHA SUA COR : <input type="color" name="color"><br><br>
+
+				<input type="submit" name="envia1" value="ENVIAR">
+		
+		</form>
+
+			</div></section>
+		
+		<footer>
+			<br><br><br><br><br><br><br><br>
+			<p align="right">Desenvolvido por: Renan Acosta</p><br>
+			<p align="right">TODOS OS DIREITOS RESERVADOS.</p>
+		</footer>
+	</div>
+</body>
+</html>

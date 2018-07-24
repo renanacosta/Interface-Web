@@ -1,0 +1,67 @@
+.UM {WIDTH: 1000PX; 
+	HEIGHT: 500PX; 
+	border-color: BLUE; /*PODE SER USADO NA MESMA LINHA: BORDER: BLUE 3PX SOLID; */
+	border-width: 3PX; 
+	border-style: double;
+	padding: 10px;
+	margin: 20PX;
+	border-top-color: RED;
+	border-bottom-color: PURPLE;
+	border-left-color: GREEN;
+	border-right-style: dotted;
+	background-color: YELLOW;
+}
+
+.DOIS {WIDTH: 150PX; 
+	HEIGHT: 100PX; 
+	border-color: RED BLUE RED BLUE; 
+	border-width: 8PX; 
+	border-style: dashed;
+	padding: 10px  20PX 10PX 20PX;
+	margin: 20PX;
+	background-image: url("/home/renan/Imagens/binary_code-wallpaper-1280x800.jpg");
+	background-repeat: repeat-x;
+}
+
+.TRES {WIDTH: 150PX; 
+	HEIGHT: 100PX; 
+	border-color: RED BLUE RED BLUE; 
+	border-width: 8PX; 
+	border-style: double;
+	padding: 120px  100PX 120PX 100PX;
+	margin: 20PX;
+	background-image: url("/home/renan/Área de Trabalho/Interface Web - 2018-1/CSS/imagesIcone.png");
+	background-repeat: repeat-x;
+	background-position: 20px 60px;
+}
+
+
+.quatro {WIDTH: 100PX; 
+	HEIGHT: 50PX; 
+	border-color: green orange green orange; 
+	border-width: 8PX; 
+	border-style: double;
+	padding: 200px  100PX 200PX 100PX;
+	margin: 20PX;
+	background-image: url("/home/renan/Imagens/676291.png");
+}
+
+.cinco {WIDTH: 10PX; 
+	HEIGHT: 5PX; 
+	border-color: green orange green orange; 
+	border-width: 8PX; 
+	border-style: double;
+	padding: 200px  100PX 200PX 100PX;
+	margin: 20PX;
+	background-image: url("/home/renan/Imagens/676291.png");
+}
+
+.seis {WIDTH: 50PX; 
+	HEIGHT: 10PX; 
+	border-color: green orange green orange; 
+	border-width: 8PX; 
+	border-style: double;
+	padding: 200px  100PX 200PX 100PX;
+	margin: 20PX;
+	background-image: url("/home/renan/Imagens/676291.png");
+}

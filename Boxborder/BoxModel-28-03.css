@@ -1,0 +1,13 @@
+.UM {WIDTH:100PX; 
+	HEIGHT: 50PX; 
+	border: 2PX RED SOLID;
+	position: relative; /*ABSOLUTE - podem ser usadas ambas, mas não é aconselhavel.*/
+	left: 60PX;
+	top: 40PX;
+}
+
+.DOIS, .TRES {WIDTH: 100PX; 
+	HEIGHT: 50PX; 
+	BORDER: 2PX blue SOLID;
+}
+

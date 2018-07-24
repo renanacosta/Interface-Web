@@ -1,0 +1,12 @@
+h1 {color: green; font-size: 30 px; text-align: center; font-style: italic; 
+	text-decoration: underline overline; font-family: arial;}
+
+h2 {text-indent: 5 px; text-align: justify; color: blue; font-family:times;}
+
+h3 {color: red; font-size: 30 px; text-align: center; font-weight: bold 300; 
+	text-decoration: underline; font-family: georgia;}
+
+h4 {text-align: left; color: orange; font-family: geneva;}
+
+P:FIRST-LETTER {font-size: 200%}
+

@@ -1,0 +1,13 @@
+.UM {WIDTH:100PX; 
+	HEIGHT: 50PX; 
+	border: 2PX RED SOLID;
+	float: left;
+		
+}
+
+.DOIS, .TRES {WIDTH: 100PX; 
+	HEIGHT: 50PX; 
+	BORDER: 2PX blue SOLID;
+	float: left; /* caixas vão alinhadas da esquerda para a direira em ordem. - RIGTH - As caixas vão da direita para a esquerda*/
+}
+

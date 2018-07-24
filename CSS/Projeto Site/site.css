@@ -1,0 +1,191 @@
+* {margin: 0px; padding: 0px; border: 0px;}
+
+/* AQUI ENGLOBA O QUADRO DE FORA (DIV) DE TODO
+O SITE, DE TODAS AS PÁGINAS*/
+.tudo {margin-left: auto; 
+		margin-right: auto; 
+		width: 1150px; 
+		height: 942px; 
+		padding: 2px; 
+		margin-top: 2px; 
+		border: 2px solid black;
+		background-image: url(fundo.jpg); }
+
+/* AQUI É OS MENUS DO SITE:
+[HOME],[CONTATO], [PRODUTO] {E SEUS SUB-MENUS = [MASCULINO]
+[FEMININO], [INFANTIL]}, [SOBRE], [LOCALIZAÇÃO]*/
+header {height: 80px; 
+		width:1138px;
+		margin: 4px;  
+		border: 2px solid gold;
+		background-color: transparent;}
+
+/* AQUI ENGLOBA O QUADRO DO LOGOTIPO (DIV) DE TODO
+O SITE, DE TODAS AS PÁGINAS*/
+.logo {height: 72px;
+	  	width: 320px;
+	  	float: left; 
+	  	margin: 2px;   
+	  	border: 2px solid gold;
+	  	background-color: transparent;
+	  	background-image: url(logo.png);}
+ 
+ /* AQUI ENGLOBA O BANNER GIF DA MARVEL (DIV) DE TODO
+O SITE, DE TODAS AS PÁGINAS*/ 
+.banner {height: 72px;
+	  		width: 800px;
+	  		float: left; 
+	  		margin: 2px;  
+	  		border: 2px solid transparent;
+	  		background-image: url(bannerMarvel.gif);}
+
+/* AQUI ENGLOBA O A (DIV) QUE SEMPRE VAI SER ALTERADA
+DE TODO O SITE, DE TODAS AS PÁGINAS*/ 
+.meio {height: 550px; 
+		width:1138px;
+		background-image: url(meioPrincipal.png);}
+
+/*COMANDO EFETUADO PARA CRIAR CADA UM DOS MENUS,
+SEM REMODELAR O SITE, SOMENTE O CONTEÚDO DO MEIO.*/
+section {height: 550px; 
+		width:1138px;
+		margin: 4px; 
+		 }		
+	  
+  /*AQUI É O MENU [HOME]*/
+.HOME {height: 30px;
+	  	width: 150px;
+	  	float: left; 
+	  	margin: 2px;}
+
+/*AQUI É O MENU [CONTATO]*/
+.CONTATO {height: 30px;
+	  		width: 150px;
+	  		float: left; 
+	  		margin: 2px;}
+
+/*AQUI É O MENU [PRODUTO]*/
+.PRODUTO {height: 30px;
+	  		width: 150px;
+	  		float: left; 
+	  		margin: 2px;}
+
+/*AQUI É O MENU [SOBRE]*/
+.SOBRE {height: 30px;
+	  		width: 150px;
+	  		float: left; 
+	  		margin: 2px;}
+
+/*AQUI É O MENU [LOCALIZAÇÃO]*/
+.LOCALIZAÇÃO {height: 30px;
+	  			width: 150px;
+	  			float: left; 
+	  			margin: 2px;}
+
+/*AQUI É O RODAPÉ DO SITE, DE TODAS AS PÁGINAS*/
+footer {height:230px; 
+			width: 1138px;  
+			margin: 2px;  
+			padding: 2px; 
+			border: 2px solid silver;
+			background-color: transparent;
+			background-image: url(rodape.png);
+			background-repeat: no-repeat;
+			color: gold;}
+
+/*AQUI O <NAV> INICIA A NAVEGAÇÃO PELOS MENUS*/
+nav {height: 40px; 
+		width: 1130px;
+		margin: 5px;  
+		padding: 2px; 
+		border: 2px solid transparent;}
+
+nav ul {width: 1100px; 
+			height:110px;
+			padding: 6px;}
+
+nav li {list-style: none;
+			padding: 3px 5px; 
+			background: gold;
+			border: 3px solid gold; 
+			margin-bottom: 2px;
+			margin-right: 10px; 
+			font: 16 verdana;
+			float: left;}
+
+nav a {display: block; 
+		color: black; 
+		text-decoration: none;}
+
+nav li:hover {background-color: black;}
+nav li a:hover {color: gold;}
+
+nav li ul {position: absolute;
+			width: 150px;
+			height: 150px;
+			top: 132px;
+			display: none;
+			float: left;}
+
+nav li:hover ul {display: block; 
+					float: left;}
+
+/* AQUI É DEFINIDA A BORDAS DOS CAMPOS DO FORMULÁRIO
+DO MENU [CONTATO]*/
+input{ border: solid 1px black }
+
+textarea{ border: solid 1px black }
+
+select { border: solid 1px black; }
+
+
+/* AQUI ALTERA A COR DA LETRA DO TEXTO, E AS CARACTERISTICAS
+DA BORDA DO MENU [SOBRE]*/
+.texto {color: gold;
+		border: solid 1px silver;
+		margin: 4px;}
+
+/* AQUI MANTENHO O TAMANHO DA DIV ORIGINAL,
+PARA PODER INCREMENTAR O FORMULÁRIO NO MENU[CONTATO]*/
+.meioHome {height: 550px; 
+		width:1138px;
+		margin: 4px;		
+		background-image: url(meioContato.jpg);}		
+
+/* AQUI ATRAVEZ DE UMA DIV, DIVIDI EM 2 COLUNAS
+OS CAMPOS DO MENU, SIMPLESMENTE DIVIDINDO OS VALORES,
+DE HEIGTH, WHIDTH E MARGIN PELA METADE DOS VALORES CITADOS
+ACIMA NO ITEM (.meio1).[CONTATO]*/
+.formulario {height: 225px; 
+		width:569px;
+		margin: 2px;
+		float: left;}
+
+/* AQUI É O SUB-MENU [MASCULINO]*/
+.homem {height: 550px; 
+		width:1138px;
+		margin: 4px;		
+		background-image: url(masculino.png);}
+
+/* AQUI É O SUB-MENU [FEMININO]*/
+.mulher {height: 550px; 
+		width:1138px;
+		margin: 4px; 
+		background-image: url(feminino.png);}
+
+/* AQUI É O SUB-MENU [INFANTIL]*/
+.infanto {height: 550px; 
+		width:1138px;
+		margin: 4px; 
+		background-image: url(infantil.png);}
+
+/* AQUI VAI O TEXTO DO MENU [SOBRE]*/
+.empresa {height: 550px; 
+		width:1138px;
+		margin: 4px;}
+
+/* AQUI VAI O MAPA DO MENU [LOCALIZAÇÃO]
+Obs: COLOQUEI UM MAPA INTERATIVO DO GOOGLE MAPS*/
+.mapa {height: 550px; 
+		width:1138px;
+		margin: 4px; }

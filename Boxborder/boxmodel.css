@@ -1,0 +1,67 @@
+.UM {WIDTH:800PX; 
+	HEIGHT: 700PX; 
+	border-color: BLUE; 
+	border-width: 6PX; 
+	border-style: double;
+	padding: 10px;
+	margin: 20PX;
+	background-color: red;
+}
+
+.DOIS {WIDTH: 710PX; 
+	HEIGHT: 260PX; 
+	border-color: RED; 
+	border-width: 1PX; 
+	border-style: dashed;
+	padding: 10px;
+	margin: 20PX;
+	background-color: YELLOW;
+}
+
+.TRES{WIDTH: 620PX; 
+	HEIGHT: 50PX; 
+	border-color: RED; 
+	border-width: 1PX; 
+	border-style: groove;
+	border-left-color: red;   
+	padding: 10px;
+	margin: 20PX;
+	margin-top: 15px; 
+	background-image: url(/home/renan/Imagens/code-program-high_resolution-wallpaper-2880x1800-720x340.png);
+}
+.quatro{WIDTH: 620PX; 
+	HEIGHT: 50PX; 
+	border-color: RED; 
+	border-width: 1PX; 
+	border-style: ridge;
+	border-color: green red green red;   
+	padding: 10px;
+	margin: 20PX;
+	margin-top:45px;
+	background-image: url(/home/renan/Imagens/binary_code-wallpaper-1280x800.jpg);
+
+}
+
+	.cinco{WIDTH: 710PX; 
+	HEIGHT: 250PX; 
+	border-color: RED; 
+	border-width: 1PX; 
+	border-style: outset;
+	border-left-color: red;   
+	padding: 10px;
+	margin: 20PX;
+	margin-top: 55px;
+	background-color: purple;
+}
+
+	.seis{WIDTH: 620PX; 
+	HEIGHT: 90PX; 
+	border-color: RED; 
+	border-width: 1PX; 
+	border-style: dotted;
+	border-left-color: red;   
+	padding: 10px;
+	margin: 30px;
+	margin-top : 45PX;
+	background-image: url(/home/renan/Imagens/794337.jpg);
+}
